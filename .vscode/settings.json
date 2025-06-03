@@ -36,7 +36,8 @@
         "requirements.txt": true,
         "README.md": false,
         "**/crypto_keys": true,
-        "start_vnc.sh": true
+        "start_vnc.sh": true,
+        "bootstrap.py": true
     },
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorCustomizations": {
