@@ -34,7 +34,7 @@ GitHub Codespaces can be used for free for about 60 hours per month, and the wor
 
 ### Setup:
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/imbus/robotframework-tutorial-de)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/imbus/robotframework-tutorial-en)
 
 1. Open this repository in GitHub Codespaces by clicking the button above.
 2. Keep the default settings (Standard class) and click **Create Codespace**.
