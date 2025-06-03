@@ -2,9 +2,9 @@ Here is the English translation of the Markdown:
 
 ---
 
-# Robot Framework Tutorial (de)
+# Robot Framework Tutorial (EN)
 
-Repository for the Robot Framework webinar in German
+Repository for the Robot Framework webinar in English
 
 This tutorial contains several small examples of how Robot Framework is used. It can be run either locally on your own computer or in a cloud development environment.
 
