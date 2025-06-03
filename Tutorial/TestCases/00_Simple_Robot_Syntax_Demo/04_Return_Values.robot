@@ -8,10 +8,10 @@ Tests with Time
     Log To Console    Hello, Folks!
     Log To Console    It is ${time}.
 
-Test with a loop
+Test a Text Contains
     Log To Console    one,two,three
     ${list}=    Split String    one,two,three    ,
-    Log Many    @{list}
+    Log To Console    FOR-Loop über: ${list}
     FOR    ${item}    IN    @{list}
         Log To Console    ${item}
     END

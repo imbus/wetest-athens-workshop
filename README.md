@@ -1,77 +1,80 @@
-# Robot Framework Tutorial (en)
-GitPod Repository for Robot Framework Tutorial in English
+Here is the English translation of the Markdown:
 
+---
 
-This Tutorial contains Multiple small examples how to use Robot Framework.
-It can either be used locally on your own machine or in a cloud dev environment.
+# Robot Framework Tutorial (de)
 
-If you have any questions about Robot Framework or if the installation does not work for you, please join our Slack and ask in **#newbies** channel.
-[Click For Slack Invitation](https://join.slack.com/t/robotframework/shared_invite/zt-2ruah2fhe-fR4DFkfLKy6mjpW2mBxGUQ)
+Repository for the Robot Framework webinar in German
 
+This tutorial contains several small examples of how Robot Framework is used. It can be run either locally on your own computer or in a cloud development environment.
+
+If you have questions about Robot Framework or the installation doesn't work, you can join the Robot Framework Slack channel **#newbies** or book a training session with imbus.
+[Click here for Slack invitation](https://slack.robotframework.org)
 
 ## Preparation
 
-To decide which way of participation you should choose, here are some hints:
+To decide which type of usage is best for you, here are a few pointers:
 
-- Cloud Environment (Gitpod.io): If you just want to see how Robot Framework works and probably not work with it after that workshop. If you are not allowed to or not that familiar how to install locally. If local installation did fail.
-- Local Installation: If you want to explore Robot Framework further and maybe dive deeper into it after the workshop.
+* **Cloud Environment (GitHub Codespaces):**
+  This option is suitable if you just want to get an initial look at Robot Framework and are unlikely to continue using it after the workshop. It's also recommended if local installation is not possible or has failed.
 
-## Gitpod.io Cloud Environment
+* **Local Installation:**
+  This option is best if you intend to explore Robot Framework more deeply and continue using it beyond the workshop.
 
-Gitpod.io offers instant docker based cloud hosted development environments.
-Everything runs in your browser and no local installation needed.
+## GitHub Codespaces Cloud Environment
 
-You can use gitpod.io actively for free for 50h a month and stop the workspace at any time, like a hibernate.
+GitHub Codespaces provides ready-to-use, Docker-based, cloud-hosted development environments.
+Everything runs in the browser, so no local installation is necessary.
+
+GitHub Codespaces can be used for free for about 60 hours per month, and the workspace can be paused at any time, like a sleep mode.
 
 ### Requirements
 
-- Github.com account
-- Phone Number for registration verification. (To activate your account, you need to indentify with a phone number to not misuse )
+* A GitHub.com account
 
 ### Setup:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/imbus/robotframework-tutorial-en)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/imbus/robotframework-tutorial-de)
 
-1. Open this repository in GitPod by clicking the button above.
-2. Keep the default settings (Standard class) and Click **Continue**.
-3. After **Preparation** you will see VSCode in your Browser.
-4. VSCode will reload and you will see the installation of all dependencies in the terminal.
-5. After installation is finished, VSCode is reloading a second and last time.
-6. Now you should see all repository files in the explorer and you are ready to go for the workshop.
+1. Open this repository in GitHub Codespaces by clicking the button above.
+2. Keep the default settings (Standard class) and click **Create Codespace**.
+3. At the bottom right, "Setting up remote connection: Building codespace..." will be displayed.
+4. You can click on "Building codespace..." to follow the progress.
+5. Once the setup is complete, the `README.md` will be shown in VSCode, and the colors will change.
+6. In the terminal, you should see "Running postCreateCommand..." – you're ready to go.
 
 ## Local Installation
 
-To use Robot Framework with the Playwright base "Robot Framework Browser" library you need Python and NodeJS, due to Playwright NodeJS being used.
-This installation will not interfere with existing Playwright or Robot Framework installation.
+To use Robot Framework with the Playwright-based "Robot Framework Browser" library, you need Python and NodeJS, since Playwright depends on NodeJS.
+This installation will not affect any existing Playwright or Robot Framework installations.
 
 ### Requirements
 
-- [Python (3.8 - 3.12)](https://www.python.org/downloads/) (For macOS strongly recommend [**pyenv**](https://github.com/pyenv/pyenv) to control which python version is used.)
-- [NodeJS >= 18](https://nodejs.org/en/download/prebuilt-installer)
-- [VSCode (strongly recommended)](https://code.visualstudio.com/download)
-- [RobotCode](https://robotcode.io/) [(VSCode Extension)](https://marketplace.visualstudio.com/items?itemName=d-biehl.robotcode)
+* [Python (3.9 - 3.13)](https://www.python.org/downloads/) (For macOS, [**pyenv**](https://github.com/pyenv/pyenv) is strongly recommended to manage Python versions.)
+* [NodeJS >= 18](https://nodejs.org/en/download/prebuilt-installer)
+* [VSCode (highly recommended)](https://code.visualstudio.com/download)
+* [RobotCode](https://robotcode.io/) [(VSCode extension)](https://marketplace.visualstudio.com/items?itemName=d-biehl.robotcode)
 
 ### Installation
 
-After installing all requirements listed above, clone this project into a folder or download and extract the repository.
-In a Terminal of your choice, navigate to the root directory of that repository where the bootstrap.py is located.
+Once all the requirements listed above are installed, clone this project into a folder or download and unpack the repository.
+Navigate to the root directory of this repository (where `bootstrap.py` is located) in a terminal of your choice.
 
-Call:
+Run the following command:
+
 ```bash
 > python bootstrap.py
 ```
 
-This bootstrap.py does install all needed dependancies into a virtual environment and initializes Browser library into the same directory (`.venv`) inside of that root directory.
-When this script is done, it tells you how to "activate" that virtual environment.
+This script installs all necessary dependencies in a virtual environment and initializes the browser library in the same directory (`.venv`) in the repository root.
+After the script finishes, it will display instructions on how to "activate" this virtual environment.
 
-When opening the root directory in VSCode, it normally automatically takes that virtual environment to activate.
-If this does not work, press F1 and execute `>Python: Select Interpreter` and select the environment in the `.venv` folder.
+When opening the root directory in VSCode, this virtual environment is usually activated automatically.
+If not, press `F1`, run the command `>Python: Select Interpreter`, and choose the environment from the `.venv` folder.
 
+## Testing the Setup
 
-## Testing your Setup
+To test the installation, open the 'Testing' Explorer (View > Testing) and run the `Tutorial` suite.
+The result should look like this: `32 tests, 29 passed, 3 failed`.
 
-To test your installation open the 'Testing' explorer (View > Testing) and run the `Tutorial` suite.
-The result should be: 16 tests, 12 passed, 4 failed
-
-You are now ready to participate the Workshop.
-
+Everything is now ready for the workshop.
